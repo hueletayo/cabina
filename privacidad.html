@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Cabina de Fotos</title>
+<style>
+  :root{ --ink:#17191f; --muted:#5c6371; --line:#dfe3e9; --bg:#fbfbfc; --accent:#a8182b; --box:#f2f3f5; }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#e6e9ef; --muted:#98a0b0; --line:#2b303a; --bg:#101218; --accent:#f0596d; --box:#1a1e25; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  main{max-width:680px; margin:0 auto; padding:56px 24px 80px}
+  h1{font-size:30px; line-height:1.2; margin:0 0 6px; letter-spacing:-.02em}
+  .fecha{color:var(--muted); font-size:14px; margin:0 0 36px}
+  h2{font-size:19px; margin:34px 0 10px; letter-spacing:-.01em}
+  p{margin:0 0 14px}
+  ul{margin:0 0 14px; padding-left:22px}
+  li{margin-bottom:7px}
+  a{color:var(--accent)}
+  .aviso{
+    background:var(--box); border-left:3px solid var(--accent);
+    padding:14px 18px; margin:0 0 14px;
+  }
+  .aviso p:last-child{margin-bottom:0}
+  footer{
+    margin-top:48px; padding-top:22px; border-top:1px solid var(--line);
+    color:var(--muted); font-size:14px;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Política de privacidad</h1>
+  <p class="fecha">Aplicación: Cabina de Fotos — Sincronizador · Última actualización: 7 de septiembre de 2026</p>
+
+  <h2>Qué es esta aplicación</h2>
+  <p>
+    Cabina de Fotos es una aplicación de escritorio de uso privado que se instala en la
+    computadora de una cabina de fotos de eventos. Copia automáticamente las fotos que
+    genera el software de la cabina a una carpeta de Google&nbsp;Drive del operador.
+  </p>
+
+  <h2>Datos que se manejan</h2>
+  <p>La aplicación trabaja con dos tipos de información:</p>
+  <ul>
+    <li>
+      <strong>Las fotos tomadas en la cabina.</strong> Se leen de la carpeta local del
+      software de la cabina y se suben a la carpeta de Google Drive que el operador
+      configuró. No se modifican ni se borran de la computadora.
+    </li>
+    <li>
+      <strong>El acceso a Google Drive del operador.</strong> Se obtiene mediante el
+      inicio de sesión de Google y queda guardado en la propia computadora de la cabina.
+    </li>
+  </ul>
+
+  <h2>Alcance del acceso a Google</h2>
+  <p>
+    La aplicación solicita únicamente el permiso
+    <code>https://www.googleapis.com/auth/drive.file</code>, que da acceso
+    <strong>exclusivamente a los archivos que la propia aplicación crea</strong>.
+  </p>
+  <p>
+    No puede leer, modificar ni borrar ningún otro archivo del Google Drive del operador,
+    ni acceder a su correo, contactos o cualquier otro servicio de Google.
+  </p>
+
+  <h2>Dónde se guardan los datos</h2>
+  <ul>
+    <li>Las fotos quedan en la computadora de la cabina y en la carpeta de Google Drive del operador.</li>
+    <li>Las credenciales de acceso quedan solo en la computadora de la cabina, en un archivo local.</li>
+    <li>No existe ningún servidor propio de esta aplicación. No se envía nada a terceros.</li>
+    <li>No se recopilan estadísticas de uso, analítica ni datos personales de los invitados.</li>
+  </ul>
+
+  <h2>Visibilidad de las fotos</h2>
+  <div class="aviso">
+    <p>
+      La carpeta de Google Drive donde se suben las fotos está compartida como
+      <strong>«cualquier persona con el enlace»</strong> en modo de solo lectura, para que
+      los invitados del evento puedan ver y descargar sus fotos escaneando un código QR.
+    </p>
+    <p>
+      Esto significa que cualquier persona que tenga ese enlace puede ver las fotos del
+      evento en curso. El operador de la cabina es responsable de informar a los asistentes
+      y de vaciar la carpeta al terminar cada evento.
+    </p>
+  </div>
+
+  <h2>Conservación y borrado</h2>
+  <p>
+    La aplicación incluye una función para vaciar la carpeta de Google Drive al terminar
+    un evento; el borrado es definitivo y no pasa por la papelera. Las fotos que quedan en
+    la computadora de la cabina son responsabilidad del operador.
+  </p>
+  <p>
+    El operador puede revocar en cualquier momento el acceso de la aplicación a su cuenta
+    desde <a href="https://myaccount.google.com/permissions">la página de permisos de su
+    cuenta de Google</a>, y borrar el archivo de credenciales de la computadora.
+  </p>
+
+  <h2>Uso de los datos de Google</h2>
+  <p>
+    El uso que esta aplicación hace de la información recibida de las APIs de Google se
+    ajusta a la
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Política
+    de Datos de Usuario de los Servicios de API de Google</a>, incluidos sus requisitos
+    de uso limitado.
+  </p>
+
+  <h2>Contacto</h2>
+  <p>
+    Por cualquier consulta sobre esta política:
+    <a href="mailto:cabinainstantanea@gmail.com">cabinainstantanea@gmail.com</a>
+  </p>
+
+  <footer>
+    <a href="index.html">Volver al inicio</a>
+  </footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cabina de Fotos — Sincronizador</title>
+<style>
+  :root{ --ink:#17191f; --muted:#5c6371; --line:#dfe3e9; --bg:#fbfbfc; --accent:#a8182b; }
+  @media (prefers-color-scheme:dark){
+    :root{ --ink:#e6e9ef; --muted:#98a0b0; --line:#2b303a; --bg:#101218; --accent:#f0596d; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  main{max-width:680px; margin:0 auto; padding:56px 24px 80px}
+  h1{font-size:34px; line-height:1.15; margin:0 0 8px; letter-spacing:-.02em}
+  .sub{color:var(--muted); font-size:18px; margin:0 0 36px}
+  h2{font-size:20px; margin:38px 0 10px; letter-spacing:-.01em}
+  p{margin:0 0 14px}
+  ul{margin:0 0 14px; padding-left:22px}
+  li{margin-bottom:7px}
+  a{color:var(--accent)}
+  footer{
+    margin-top:48px; padding-top:22px; border-top:1px solid var(--line);
+    color:var(--muted); font-size:14px;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Cabina de Fotos</h1>
+  <p class="sub">Sincronizador de fotos para cabinas de eventos.</p>
+
+  <p>
+    Esta es una aplicación de escritorio para Windows que se usa en cabinas de fotos
+    de eventos sociales. Vigila la carpeta donde el software de la cabina guarda las
+    fotos y las copia automáticamente a una carpeta de Google&nbsp;Drive del operador
+    de la cabina.
+  </p>
+  <p>
+    Los invitados del evento escanean un código QR impreso en la cabina y llegan a esa
+    carpeta, donde pueden ver y descargar sus fotos desde el celular.
+  </p>
+
+  <h2>Qué hace</h2>
+  <ul>
+    <li>Detecta cada foto nueva que genera el software de la cabina.</li>
+    <li>La sube a una carpeta de Google Drive elegida por el operador.</li>
+    <li>Guarda en cola las fotos que no se pudieron subir y las reintenta cuando vuelve la conexión.</li>
+    <li>Permite vaciar la carpeta al terminar un evento, para empezar el siguiente.</li>
+  </ul>
+
+  <h2>Qué no hace</h2>
+  <ul>
+    <li>No accede a ningún otro archivo del Google Drive del operador.</li>
+    <li>No envía datos a servidores propios ni de terceros.</li>
+    <li>No recopila estadísticas de uso.</li>
+  </ul>
+
+  <h2>Uso privado</h2>
+  <p>
+    Es una herramienta de uso privado, hecha para una sola cabina. No se distribuye
+    públicamente ni se ofrece como servicio.
+  </p>
+
+  <footer>
+    <a href="privacidad.html">Política de privacidad</a>
+  </footer>
+
+</main>
+</body>
+</html>
